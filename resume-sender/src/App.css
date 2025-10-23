@@ -1,0 +1,77 @@
+/* ---- Reset / base ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* ---- Container ---- */
+.container {
+  width: 100%;
+  max-width: 540px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ---- Typography ---- */
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 600;
+  color: #111827;
+}
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #1f2937;
+}
+small {
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+.muted {
+  font-weight: 400;
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+
+/* ---- Form elements ---- */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+.input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  transition: border 0.15s ease;
+  resize: vertical;
+}
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ---- Button ---- */
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px
