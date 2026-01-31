@@ -57,12 +57,28 @@ const DEFAULT_RESUME     = path.join(__dirname, "Bhavani_Badiger_Resume.pdf");
 const DEFAULT_COVER_LETTER = path.join(__dirname, "Bhavani_Badiger_Cover_Letter.pdf");
 
 // ---------- mail helpers ----------
+// function buildTransporter() {
+//   return nodemailer.createTransport({
+//     service: "gmail",
+//     auth: { user: EMAIL_USER, pass: EMAIL_PASS },
+//   });
+// }
+
 function buildTransporter() {
   return nodemailer.createTransport({
-    service: "gmail",
-    auth: { user: EMAIL_USER, pass: EMAIL_PASS },
+    host: "smtp.gmail.com",
+    port: 465,           // IMPORTANT
+    secure: true,        // MUST be true for port 465
+    auth: {
+      user: EMAIL_USER,
+      pass: EMAIL_PASS,
+    },
+    connectionTimeout: 10000,
   });
 }
+
+const transporter = buildTransporter();
+
 
 function escapeHtml(text) {
   return String(text)
