@@ -74,7 +74,7 @@ export default function App() {
     try {
       setStatus("sending");
 
-      const res = await fetch("http://localhost:5000/send-email", {
+      const res = await fetch("https://resume-sender-backend.onrender.com/send-email", {
         method: "POST",
         body: formData,
       });
