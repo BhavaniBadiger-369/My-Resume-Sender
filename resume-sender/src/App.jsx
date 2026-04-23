@@ -70,11 +70,11 @@ export default function App() {
     if (message.trim()) formData.append("body", message);
     if (resume) formData.append("resume", resume);
     if (cover) formData.append("cover", cover);
-
+//https://resume-sender-backend.onrender.com
     try {
       setStatus("sending");
 
-      const res = await fetch("https://resume-sender-backend.onrender.com/send-email", {
+      const res = await fetch("http://localhost:5000/send-email", {
         method: "POST",
         body: formData,
       });
