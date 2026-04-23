@@ -161,5 +161,9 @@ My-Resume-Sender/
 - [ ] Rate limiting to avoid Gmail daily send limits
 - [ ] Drag and drop file upload
 
+## Author
+
+**Bhavani Badiger** — Software Developer 
+[GitHub](https://github.com/BhavaniBadiger-369) · [LinkedIn](https://www.linkedin.com/in/bhavani-laxmikant-badiger-7a0902267/)
 
 
